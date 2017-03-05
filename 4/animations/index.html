@@ -6,28 +6,32 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <style>
-  p {
-    animation-duration: 3s;
-    animation-name: slidein;
-    animation-fill-mode: forwards;
-    /*animation: slidein 3s;*/
-    animation-timing-function: cubic-bezier(0,-0.5, 1, 0.18);
+
+  .fly {
+    position: absolute;
+    right: 0;
+    top: 0;
+    animation: fly 3s forwards cubic-bezier(0.68, 0.43, 0.21, 1.3);
   }
-  @keyframes slidein {
+
+  @keyframes fly {
     from {
-      margin-left: 0%;
-      width: 100%;
+      right: 0;
+      top: 0;
     }
     to {
-      margin-left: 110%;
-      width: 300%;
+      right: 90%;
+      top: 90%;
     }
+  }
+  .fly img {
+    width: 150px;
   }
   </style>
 </head>
 <body>
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dicta totam, repudiandae! Reprehenderit ipsum, cum dolorum et! Consectetur, officiis asperiores ipsum eveniet deleniti magni aperiam dolor veniam vel consequuntur a.
-  </p>
+  <div class="fly">
+    <img src="fly.png" alt="">
+  </div>
 </body>
 </html>
