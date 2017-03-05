@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: arial, helvetica, sans-serif;
+      background: #60CE7B;
+    }
+
+    .half {
+      display: inline-block;
+      width: 50%;
+      padding-right: 5px;
+    }
+
+    h1 {
+      background: #5D7289;
+      color: white;
+      text-align: center;
+      font-size: 13px;
+      margin: 0;
+      padding: 0;
+      line-height: 40px;
+      border-radius: 5px 5px 0 0;
+    }
+    h2 {
+      color: #5D7289;
+      font-size: 13px;
+    }
+    input {
+      width: 100%;
+      outline: 0;
+      border: 1px solid #b1b1b1;
+      background: #f7f7f7;
+      border-radius: 3px;
+      line-height: 30px;
+    }
+
+    .green-button {
+      background: #60CE7B;
+      outline: 0;
+      border: 0;
+      border-radius: 5px;
+      width: 100%;
+      color: white;
+      font-size: 13px;
+      line-height: 35px;
+      margin-top: 30px;
+    }
+
+    form {
+      background: white;
+      padding: 10px;
+      border-radius: 0 0 5px 5px;
+    }
+
+    .container {
+      min-width: 400px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Get Started Today</h1>
+    <form>
+      <div>
+        <div class="half">
+          <h2>First name</h2>
+          <input type="text">
+        </div><div class="half">
+          <h2>Last name</h2>
+          <input type="text">
+        </div>
+      </div>
+      <div>
+        <div class="half">
+          <h2>Email address</h2>
+          <input type="text">
+        </div><div class="half">
+          <h2>Password</h2>
+          <input type="text">
+        </div>
+      </div>
+      <button class="green-button">Claim Your Free Trial</button>
+    </form>
+  </div>
+</body>
+</html>
