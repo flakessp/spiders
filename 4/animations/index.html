@@ -11,15 +11,21 @@
     position: absolute;
     right: 0;
     top: 0;
-    animation: fly 3s forwards cubic-bezier(0.68, 0.43, 0.21, 1.3);
+    animation: fly 3s forwards;
   }
 
   @keyframes fly {
-    from {
+    0% {
       right: 0;
       top: 0;
+      transform: rotate(-180deg);
     }
-    to {
+    50% {
+      right: 90%;
+      top: 0;
+      transform: rotate(0);
+    }
+    100% {
       right: 90%;
       top: 90%;
     }
