@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+  p {
+    animation-duration: 3s;
+    animation-name: slidein;
+    animation-fill-mode: forwards;
+    /*animation: slidein 3s;*/
+    animation-timing-function: cubic-bezier(0,-0.5, 1, 0.18);
+  }
+  @keyframes slidein {
+    from {
+      margin-left: 0%;
+      width: 100%;
+    }
+    to {
+      margin-left: 110%;
+      width: 300%;
+    }
+  }
+  </style>
+</head>
+<body>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet dicta totam, repudiandae! Reprehenderit ipsum, cum dolorum et! Consectetur, officiis asperiores ipsum eveniet deleniti magni aperiam dolor veniam vel consequuntur a.
+  </p>
+</body>
+</html>
