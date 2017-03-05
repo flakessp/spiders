@@ -1,0 +1,46 @@
+html {
+  height: 100%;
+  background: black url(bg.gif) center no-repeat;
+  background-size: cover;
+}
+body {
+  margin: 0 auto;
+  max-width: 300px;
+  color: white;
+  font-family: "Courier New", Courier, Monaco, sans-serif;
+  font-size: 12px;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  margin-bottom: 10px;
+}
+
+.header {
+  margin-top: 300px;
+  margin-bottom: 70px;
+}
+
+.footer {
+  margin-top: 30px;
+}
+
+.main a:hover {
+  color: white;
+  background-color: red;
+}
+
+@media screen and (max-width:320px){
+  .header {
+    margin-top: 60px;
+  }
+  body {
+    max-width: 200px;
+  }
+}
